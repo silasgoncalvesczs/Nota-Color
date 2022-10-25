@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Nota Color</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="text-bg-dark">
+
+    <div class="container text-center mt-2">
+        <!-- <img class="logoContemVida" src="./assets/Logo_Contém_Vida.png" alt="Logo Contem Vida"> -->
+        <h3 class="text-center text-light fw-bold">Notas</h3>
+
+        <div id="posts" class="d-flex justify-content-center flex-wrap">
+        </div>
+
+        <h5>Nova Nota</h5>
+        <div class="row gx-1 justify-content-center m-1">
+            <div class="col-md-2">
+                <input class="form-control m-1" id="title" type="text" placeholder="Titulo">
+            </div>
+            <div class="col-md-8">
+                <input class="form-control m-1" id="desc" type="text" placeholder="Descrição">
+            </div>
+            <div class="col-md-1">
+                <select class="form-select m-1" name="" id="NameCores">
+                    <option value="">Cor</option>
+                    <option value="bg-info">Azul</option>
+                    <option value="bg-secondary">Cinza</option>
+                    <option value="bg-success">Verde</option>
+                    <option value="bg-danger">Vermelho</option>
+                    <option value="bg-warning">Amarelo</option>
+                </select>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-success m-1" onclick="newPost()">Salvar</button>
+            </div>
+        </div>
+
+        <div class="row g-0 justify-content-center m-1 mb-5">
+            <div class="d-flex col-sm-4 mb-5">
+                <input class="form-control m-1" id="descId" type="text" placeholder="Id">
+                <button class="btn btn-danger m-1" onclick="deleteId()">Excluir</button>
+            </div>
+        </div>
+
+    </div>
+    <footer class="fixed-bottom bg-secondary">
+        <div class="text-center py-1">
+            <a class="text-light mx-1" href="https://silasgoncalvesczs.github.io/Portfolio-New/" target="_blank">Dev.
+                Silas
+                Gonçalves</a>
+            <a class="text-decoration-none mx-1" href="https://github.com/silasgoncalvesczs" target="_blank">
+                <img class="imgFooter" src="./assets/github.png" alt="">
+            </a>
+            <a class="text-decoration-none mx-1" href="https://www.instagram.com/silas_goncal/" target="_blank">
+                <img class="imgFooter" src="./assets/instagram.png" alt="">
+            </a>
+            <a class="text-decoration-none mx-1" href="https://www.linkedin.com/in/silas-goncalv/" target="_blank">
+                <img class="imgFooter" src="./assets/linkedin.png" alt="">
+            </a>
+            <a class="text-decoration-none mx-1" href="https://www.facebook.com/silas.goncalv/" target="_blank">
+                <img class="imgFooter" src="./assets/facebook.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
