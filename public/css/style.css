@@ -18,3 +18,7 @@ body {
 .imagFooter {
     border-radius: 5px;
 }
+
+#posts a{
+    color: #010194;
+}
